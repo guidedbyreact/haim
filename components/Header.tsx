@@ -9,10 +9,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: 'Accueil', href: '/' },
-    { label: 'Nos métiers', href: '/nos-metiers' },
+    { label: 'Home', href: '/' },
+    { label: 'Our Services', href: '/our-services' },
     { label: 'Missions', href: '/missions' },
-    { label: 'RSE', href: '/rse' },
+    { label: 'CSR', href: '/csr' },
     { label: 'Contact', href: '/contact' },
   ];
 
@@ -46,10 +46,10 @@ const Header = () => {
               </Link>
             ))}
             <Link
-              href="/espace-collaborateurs"
+              href="/employee-portal"
               className="bg-[#4ae7ff] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#3bc5db] transition-colors"
             >
-              Espace collaborateurs
+              Employee Portal
             </Link>
           </nav>
 
@@ -83,11 +83,11 @@ const Header = () => {
                 </Link>
               ))}
               <Link
-                href="/espace-collaborateurs"
+                href="/employee-portal"
                 className="bg-[#4ae7ff] text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#3bc5db] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Espace collaborateurs
+                Employee Portal
               </Link>
             </div>
           </div>

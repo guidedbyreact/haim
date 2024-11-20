@@ -2,11 +2,11 @@ import React from 'react';
 
 const Carousel = () => {
   const ads = [
-    "Publicité 1 : Découvrez nos solutions innovantes.",
-    "Publicité 2 : Profitez de nos offres spéciales.",
-    "Publicité 3 : Contactez-nous pour plus d'informations.",
-    "Publicité 4 : Rejoignez notre équipe dynamique.",
-    "Publicité 5 : Partenaire de votre transformation digitale."
+    "Ad 1: Discover our innovative solutions.",
+    "Ad 2: Take advantage of our special offers.",
+    "Ad 3: Contact us for more information.",
+    "Ad 4: Join our dynamic team.",
+    "Ad 5: Partner in your digital transformation."
   ];
 
   return (

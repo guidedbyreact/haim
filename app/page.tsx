@@ -9,41 +9,41 @@ const HomePage = () => {
   const services = [
     {
       icon: <Database className="w-12 h-12 text-[#4ae7ff]" />,
-      title: "Infrastructure IT & Data",
-      description: "Nos spécialistes sont là pour vous guider à chaque étape de l'évolution de votre SI."
+      title: "IT Infrastructure & Data",
+      description: "Our specialists are here to guide you through every step of your IT system evolution."
     },
     {
       icon: <Cloud className="w-12 h-12 text-[#4ae7ff]" />,
-      title: "Infrastructures Cloud & On Premise",
-      description: "De la conception au développement en passant par la mise en production et la maintenance."
+      title: "Cloud & On-Premise Infrastructure",
+      description: "From design to development, through production deployment and maintenance."
     },
     {
       icon: <Brain className="w-12 h-12 text-[#4ae7ff]" />,
-      title: "Secteur IA",
-      description: "Nos spécialistes en intelligence artificielle vous guident dans l'évolution de votre stratégie IA."
+      title: "AI Sector",
+      description: "Our AI specialists guide you in evolving your AI strategy."
     }
   ];
 
   const interventions = [
     {
-      title: "Délégation d'experts-ATU",
-      description: "Afin de renforcer vos équipes ou de répondre à des besoins techniques spécifiques."
+      title: "Expert Delegation-ATU",
+      description: "To strengthen your teams or respond to specific technical needs."
     },
     {
-      title: "Centre de services ATG",
-      description: "Accompagner nos clients sur un métier dans sa globalité, en priorisant le maintien en condition opérationnelle."
+      title: "ATG Service Center",
+      description: "Supporting our clients in their business globally, prioritizing operational maintenance."
     },
     {
-      title: "Réalisation au forfait",
-      description: "Migration et montée de version, integration logiciel, Move to cloud, mise en place MDM, data Cloud Platform..."
+      title: "Fixed-Price Projects",
+      description: "Migration and version upgrades, software integration, Move to cloud, MDM implementation, Cloud Data Platform..."
     }
   ];
 
   const stats = [
-    { number: "100", label: "collaborateurs", suffix: "" },
-    { number: "15", label: "chiffre d'affaires", suffix: " M" },
-    { number: "100", label: "croissance annuelle", suffix: " %" },
-    { number: "70", label: "de consultants certifiés", suffix: " %" }
+    { number: "100", label: "employees", suffix: "" },
+    { number: "15", label: "revenue", suffix: " M" },
+    { number: "100", label: "annual growth", suffix: " %" },
+    { number: "70", label: "certified consultants", suffix: " %" }
   ];
 
   return (
@@ -52,15 +52,15 @@ const HomePage = () => {
       <section className="relative h-screen flex items-center bg-white pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#4ae7ff] mb-6">
-              Votre partenaire pour une transformation<br />
-              innovante, performante et durable
+            <h1 className="text-4xl md:text-6xl font-bold text-[#0c2637] mb-6">
+              Your partner for innovative,<br />
+              efficient and sustainable transformation
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Infrastructure, Data & IA
+              Infrastructure, Data & AI
             </p>
             <button className="bg-[#4ae7ff] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#3bc5db] transition-colors">
-              En savoir plus
+              Learn More
             </button>
           </div>
         </div>
@@ -69,8 +69,8 @@ const HomePage = () => {
       {/* Services Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#4ae7ff] mb-12 text-center">
-            Nous couvrons l'ensemble des métiers d'expertise dans les domaines de
+          <h2 className="text-3xl font-bold text-[#0c2637] mb-12 text-center">
+            We cover all areas of expertise in the fields of
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {services.map((service, index) => (
@@ -90,8 +90,8 @@ const HomePage = () => {
       {/* Interventions Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#4ae7ff] mb-12 text-center">
-            Nos types d'interventions
+          <h2 className="text-3xl font-bold text-[#0c2637] mb-12 text-center">
+            Our Types of Interventions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {interventions.map((item, index) => (
@@ -107,8 +107,8 @@ const HomePage = () => {
       {/* Stats Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#4ae7ff] mb-12 text-center">
-            Quelques chiffres...
+          <h2 className="text-3xl font-bold text-[#0c2637] mb-12 text-center">
+            Key Figures
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -127,7 +127,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Footer Section */}
       <Footer />
     </div>
   );
