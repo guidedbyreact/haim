@@ -10,7 +10,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="overflow-hidden bg-blue-100 py-4">
+    <div className="overflow-hidden py-4">
       <div className="flex animate-marquee space-x-8">
         {ads.map((ad, index) => (
           <div key={index} className="flex-shrink-0 text-blue-900 font-medium text-lg">

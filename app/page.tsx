@@ -48,14 +48,14 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <section className="relative h-screen flex items-center bg-gradient-to-r from-blue-900 to-blue-700 pt-20">
+      <section className="relative h-screen flex items-center bg-white pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Votre partenaire pour une transformation<br />
               innovante, performante et durable
             </h1>
-            <p className="text-xl text-white/80 mb-8">
+            <p className="text-xl text-gray-700 mb-8">
               Infrastructure, Data & IA
             </p>
             <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">
@@ -66,7 +66,7 @@ const HomePage = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Nous couvrons l'ensemble des métiers d'expertise dans les domaines de
@@ -87,7 +87,7 @@ const HomePage = () => {
       <Carousel />
 
       {/* Interventions Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Nos types d'interventions
@@ -104,7 +104,7 @@ const HomePage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Quelques chiffres...
