@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
@@ -21,8 +22,15 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-blue-900">
-              HAIM
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo.jpg"
+                alt="HAIM Logo"
+                width={800}
+                height={160}
+                className="h-20 w-auto"
+                priority
+              />
             </Link>
           </div>
 
@@ -32,14 +40,14 @@ const Header = () => {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#4ae7ff] px-3 py-2 text-sm font-medium transition-colors"
               >
                 {item.label}
               </Link>
             ))}
             <Link
               href="/espace-collaborateurs"
-              className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors"
+              className="bg-[#4ae7ff] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#3bc5db] transition-colors"
             >
               Espace collaborateurs
             </Link>
@@ -49,7 +57,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600"
+              className="text-gray-700 hover:text-[#4ae7ff]"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -68,7 +76,7 @@ const Header = () => {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                  className="text-gray-700 hover:text-[#4ae7ff] block px-3 py-2 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -76,7 +84,7 @@ const Header = () => {
               ))}
               <Link
                 href="/espace-collaborateurs"
-                className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition-colors"
+                className="bg-[#4ae7ff] text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#3bc5db] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Espace collaborateurs
