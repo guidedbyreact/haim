@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronRight, Database, Cloud, Brain, Users, Settings } from 'lucide-react';
 import Header from '../components/Header';
+import Carousel from '../components/Carousel';
 
 const HomePage = () => {
   const services = [
@@ -80,6 +81,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Carousel Section */}
+      <Carousel />
 
       {/* Interventions Section */}
       <section className="py-20 px-4 bg-gray-50">
