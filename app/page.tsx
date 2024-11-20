@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronRight, Database, Cloud, Brain, Users, Settings } from 'lucide-react';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   const services = [
@@ -118,6 +119,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <Footer />
     </div>
   );
 };
