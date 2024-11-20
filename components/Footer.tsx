@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact & Social</h3>
-            <p>6 rue duret 75116 Paris</p>
+            <p>+971 55 300 4675</p>
             <p><a href="https://www.linkedin.com" className="hover:underline">LinkedIn</a></p>
           </div>
 

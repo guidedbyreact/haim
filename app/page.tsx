@@ -53,8 +53,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-[#0c2637] mb-6">
-              Your partner for innovative,<br />
-              efficient and sustainable transformation
+              Pioneers of a new digital offer, we want to become the preferred technology partner of companies through cutting-edge IT solutions and high level support.
             </h1>
             <p className="text-xl text-gray-700 mb-8">
               Infrastructure, Data & AI
