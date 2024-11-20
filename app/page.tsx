@@ -3,6 +3,7 @@ import { ChevronRight, Database, Cloud, Brain, Users, Settings } from 'lucide-re
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import Footer from '../components/Footer';
+import AnimatedNumber from '../components/AnimatedNumber';
 
 const HomePage = () => {
   const services = [
@@ -39,10 +40,10 @@ const HomePage = () => {
   ];
 
   const stats = [
-    { number: "100", label: "collaborateurs" },
-    { number: "15 M", label: "chiffre d'affaires" },
-    { number: "100 %", label: "croissance annuelle" },
-    { number: "70 %", label: "de consultants certifiés" }
+    { number: "100", label: "collaborateurs", suffix: "" },
+    { number: "15", label: "chiffre d'affaires", suffix: " M" },
+    { number: "100", label: "croissance annuelle", suffix: " %" },
+    { number: "70", label: "de consultants certifiés", suffix: " %" }
   ];
 
   return (
@@ -112,7 +113,13 @@ const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</p>
+                <p className="text-4xl font-bold text-blue-600 mb-2">
+                  <AnimatedNumber 
+                    value={parseInt(stat.number)} 
+                    duration={2000}
+                    suffix={stat.suffix}
+                  />
+                </p>
                 <p className="text-gray-600">{stat.label}</p>
               </div>
             ))}
