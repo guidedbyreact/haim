@@ -1,185 +1,117 @@
 import React from 'react';
-import { ChevronRight, Globe, MessageSquare, Lock, Wrench, Shield } from 'lucide-react';
+import { ChevronRight, Database, Cloud, Brain, Users, Settings } from 'lucide-react';
+import Header from '../components/Header';
 
 const HomePage = () => {
   const services = [
     {
-      icon: <Globe className="w-8 h-8 text-cyan-400" />,
-      title: "Infrastructure & Plateforme",
-      description: "Deployment of a robust infrastructure supporting daily applications and tools."
+      icon: <Database className="w-12 h-12 text-blue-600" />,
+      title: "Infrastructure IT & Data",
+      description: "Nos spécialistes sont là pour vous guider à chaque étape de l'évolution de votre SI."
     },
     {
-      icon: <MessageSquare className="w-8 h-8 text-cyan-400" />,
-      title: "Collaboration & Communication",
-      description: "Integrated video conferencing tools, document sharing, and instant messaging."
+      icon: <Cloud className="w-12 h-12 text-blue-600" />,
+      title: "Infrastructures Cloud & On Premise",
+      description: "De la conception au développement en passant par la mise en production et la maintenance."
     },
     {
-      icon: <Lock className="w-8 h-8 text-cyan-400" />,
-      title: "Mobility & Remote Access",
-      description: "Secure access to company resources from anywhere in the world."
-    },
-    {
-      icon: <Wrench className="w-8 h-8 text-cyan-400" />,
-      title: "Technical Support",
-      description: "High-level technical support for rapid resolution of digital issues."
-    },
-    {
-      icon: <Shield className="w-8 h-8 text-cyan-400" />,
-      title: "Security & Data Management",
-      description: "Advanced security solutions aimed at safeguarding sensitive data."
+      icon: <Brain className="w-12 h-12 text-blue-600" />,
+      title: "Secteur IA",
+      description: "Nos spécialistes en intelligence artificielle vous guident dans l'évolution de votre stratégie IA."
     }
   ];
 
-  const customerCases = [
+  const interventions = [
     {
-      type: "Small shop",
-      challenge: "I want to offer a secure Wi-Fi connection to my customers, but I don't know how to do...",
-      solution: "We install a secure Wi-Fi hostspot at the shop, ensuring both, a smooth connection for customers and a protection of your internal network against intrusions."
+      title: "Délégation d'experts-ATU",
+      description: "Afin de renforcer vos équipes ou de répondre à des besoins techniques spécifiques."
     },
     {
-      type: "Big company",
-      challenge: "I manage a company with more than 1000 devices (computers, smartphones, tablets) and I don't know how to update...",
-      solution: "We implement a centralized management system (MDM) to automate and simplify updates for all your devices, ensuring that your IT equipment remains up to date and secure."
+      title: "Centre de services ATG",
+      description: "Accompagner nos clients sur un métier dans sa globalité, en priorisant le maintien en condition opérationnelle."
+    },
+    {
+      title: "Réalisation au forfait",
+      description: "Migration et montée de version, integration logiciel, Move to cloud, mise en place MDM, data Cloud Platform..."
     }
   ];
 
-  const offers = {
-    audit: [
-      "Digital Workplace discovery audit",
-      "ITSM audit",
-      "Active Directory audit",
-      "Workstation and Smart devices audit"
-    ],
-    projects: [
-      "Windows 11 migration project",
-      "Azure AD migration project",
-      "MDM solution deployment project",
-      "Devices security project",
-      "New application project deployment",
-      "Custom project*"
-    ],
-    maintenance: [
-      "Preventive Maintenance",
-      "Corrective Maintenance",
-      "Evolutionary Maintenance",
-      "Customize Maintenance*"
-    ]
-  };
+  const stats = [
+    { number: "100", label: "collaborateurs" },
+    { number: "15 M", label: "chiffre d'affaires" },
+    { number: "100 %", label: "croissance annuelle" },
+    { number: "70 %", label: "de consultants certifiés" }
+  ];
 
   return (
-    <div className="min-h-screen bg-slate-900">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col items-center text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Revolutionize your work experience
+    <div className="min-h-screen bg-white">
+      <Header />
+      <section className="relative h-screen flex items-center bg-gradient-to-r from-blue-900 to-blue-700 pt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Votre partenaire pour une transformation<br />
+              innovante, performante et durable
             </h1>
-            <p className="text-xl text-cyan-400 mb-8">
-              Pioneers of a new digital offer, your preferred technology partner
+            <p className="text-xl text-white/80 mb-8">
+              Infrastructure, Data & IA
             </p>
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">
+              En savoir plus
+            </button>
           </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="py-16 px-4 md:px-8 bg-slate-800">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8">ABOUT US</h2>
-          <p className="text-lg text-gray-300 mb-6">
-            We are dedicated to deliver expert, high-quality support to companies embracing the modern digital workplace. Leveraging our extensive experience, we provide tailored consulting services to help organizations navigate challenges and capitalize on opportunities.
-          </p>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-12">OUR SERVICES</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Nous couvrons l'ensemble des métiers d'expertise dans les domaines de
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {services.map((service, index) => (
-              <div key={index} className="bg-slate-800 p-6 rounded-lg">
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
-                <p className="text-gray-300">{service.description}</p>
+              <div key={index} className="group hover:shadow-xl transition-shadow duration-300 p-8 rounded-lg">
+                <div className="mb-6">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Customer Cases Section */}
-      <section className="py-16 px-4 md:px-8 bg-slate-800">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-12">CUSTOMER CASE</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {customerCases.map((case_, index) => (
-              <div key={index} className="bg-slate-900 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-cyan-400 mb-4">{case_.type}</h3>
-                <div className="mb-4">
-                  <p className="text-white font-medium mb-2">Challenge:</p>
-                  <p className="text-gray-300 italic">&quot;{case_.challenge}&quot;</p>
-                </div>
-                <div>
-                  <p className="text-white font-medium mb-2">HAIM Solution:</p>
-                  <p className="text-gray-300">{case_.solution}</p>
-                </div>
+      {/* Interventions Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Nos types d'interventions
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {interventions.map((item, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold text-blue-600 mb-4">{item.title}</h3>
+                <p className="text-gray-600">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Offers Section */}
-      <section className="py-16 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-12">Our OFFERS</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-cyan-400 mb-6">AUDIT</h3>
-              <ul className="space-y-3">
-                {offers.audit.map((item, index) => (
-                  <li key={index} className="flex items-center text-gray-300">
-                    <ChevronRight className="w-4 h-4 text-cyan-400 mr-2" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-cyan-400 mb-6">PROJECTS</h3>
-              <ul className="space-y-3">
-                {offers.projects.map((item, index) => (
-                  <li key={index} className="flex items-center text-gray-300">
-                    <ChevronRight className="w-4 h-4 text-cyan-400 mr-2" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-slate-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-cyan-400 mb-6">MAINTENANCE</h3>
-              <ul className="space-y-3">
-                {offers.maintenance.map((item, index) => (
-                  <li key={index} className="flex items-center text-gray-300">
-                    <ChevronRight className="w-4 h-4 text-cyan-400 mr-2" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+      {/* Stats Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Quelques chiffres...
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <p className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</p>
+                <p className="text-gray-600">{stat.label}</p>
+              </div>
+            ))}
           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-16 px-4 md:px-8 bg-slate-800">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-8">CONTACT</h2>
-          <p className="text-2xl text-cyan-400 mb-4">+971 55 300 4675</p>
-          <a href="https://www.haim.digital" className="text-xl text-cyan-400 hover:underline">
-            www.haim.digital
-          </a>
         </div>
       </section>
     </div>
